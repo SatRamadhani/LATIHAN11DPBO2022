@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Skin 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="author.php">Author</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white active" href="member.php">Member</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pinjam.php">Peminjaman</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid d-flex">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-4 m-3">
+      <div class="card p-5 mr-3">
+        <h2 class="card-title">Add Member</h2>
+        <form action="member.php" method="POST">
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="nim">NIM</label>
+              INPUT_NIM
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="nama">Nama</label>
+              INPUT_NAMA
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="program">Jurusan</label>
+              INPUT_JURUSAN
+            </div>
+          </div>
+
+          INPUT_BUTTON
+        </form>
+      </div>
+    </div>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-7 m-3">
+      <h1 class="text-center mt-3">Tabel Member</h1>
+      <table class="table table-info table-stripped" border="1">
+        <tr>
+          <th>No.</th>
+          <th>NIM</th>
+          <th>Nama</th>
+          <th>Jurusan</th>
+          <th>Action</th>
+        </tr>
+        DATA_TABEL
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
